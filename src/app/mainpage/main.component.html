@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Genrie Patters landing
+		</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+	<p id="up"></p>
+		<img src="./assets/birds.jpg" alt="Птички" width="1855" height="300">
+		<p><div class="navigator"><a href="#down">Вниз страницы</a></div></p>
+		<p><a href="https://qna.habr.com/q/213154" target="_blank">Аттрибут download работает только на НЕлокальном сайте</a></p>
+    <p><a href="./index.html" download target="_blank">Download the file</a></p>
+		<a href="http://google.com" target="_blank" title="google.com" class="link">G<text class="red">oo</text>gle</a>
+		<h1> Заголовок </h1>
+		<p title="hint for text.. hmm.."> Основной текст, <mark>выделенный желтым текст</mark> </p>
+		<p> <strong> Жирный текст </strong> </p>
+		<p> Курсив не курсив </p>
+		<article class="articles">
+			Хотя теги можно писать в любом регистре и это с точки зрения синтаксиса HTML будет правильно, 
+			рекомендуем придерживаться единообразия и писать все теги маленькими буквами. Так повышается 
+			читаемость кода и снижается вероятность возникновения ошибок. <!-- Комментарий в тексте -->
+			После содержимого элемента идёт закрывающий тег, в котором вместе с открывающей угловой скобкой 
+			есть косая черта. По закрывающему тегу мы определяем, что элемент завершён.
+			Некоторые элементы не содержат закрывающего тега и такие элементы называются самозакрывающими. 
+			Естественно, у них нет и содержимого. Вот пример.
+		</article>
+		<pre>
+		public boolean shouldOverrideUrlLoading(WebView view, String url) {
+		  if (url.startsWith("http://") || url.startsWith("https://")) {
+			view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+			return true;
+		  } else {
+			return false;
+		  }
+		}
+		</pre>
+		
+		<ul>
+			<li><a href="https://vk.com/genriepatters" target="_blank"> Моя странциа в VK (https ссылка) </a></li>
+			<li><a href="./assets/birds_full.jpg" target="_blank"> Фото птичек полностью (относительный путь) </a></li>
+			<li><a href="G:/Андрей/Sponge Bob with jowls color.png" target="_blank"> Фото спанч боба (абсолютный путь) </a></li>
+			<li>Элемент списка без ссылки
+				<ul>
+					<li>Разные подпункты</li>
+					<li>С полыми кружочками</li>
+					<li>Тема тоже норм, можно вложить еще:
+						<ul>
+							<li>пункты 3 уровня</li>
+							<li>второй пункт</li>
+							<li>разобрались вобщем с &lt;ul&gt; и &lt;li&gt;</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<ol>
+			<li>Ordered list
+				<ul>
+					<li>Unordered list</li>
+					<li>Unordered list 1</li>
+					<li>Unordered list 2</li>
+					<li>Unordered list 3</li>
+				</ul>	
+			</li>
+			<li>Ordered list 1 (type "a")
+				<ol type="a">
+					<li>Second ordered list</li>
+					<li>Second ordered list 1</li>
+					<li>Second ordered list 2</li>
+					<li>Second ordered list 3</li>
+				</ol>
+			</li>
+			<li>Ordered list 2 (type "I")
+				<ol type="I">
+					<li>Second ordered list</li>
+					<li>Second ordered list 1</li>
+					<li>Second ordered list 2</li>
+					<li>Second ordered list 3</li>
+				</ol>			
+			</li>
+			<li>Ordered list 3 (type "1", start "23", value "45")
+				<ol type="1" start="23">
+					<li>Second ordered list </li>
+					<li>Second ordered list 1</li>
+					<li>Second ordered list 2</li>
+					<li>Second ordered list 3</li>
+					<li>Second ordered list 4</li>
+					<li>Second ordered list 5</li>
+					<li value="45">Second ordered list 6 (value "45")</li>
+					<li>Second ordered list 7</li>
+					<li>Second ordered list 8</li>
+					<li>Second ordered list 9</li>
+					<li>Second ordered list 10</li>
+					<li>Second ordered list 11</li>
+					<li>Second ordered list 12</li>
+				</ol>			
+			</li>
+			<li>Ordered list 4 (type "I", value "IX"="9")
+				<ol type="I">
+					<li value="9">Second ordered list </li>
+					<li>Second ordered list 1</li>
+					<li>Second ordered list 2</li>
+					<li>Second ordered list 3</li>
+				</ol>			
+			</li>
+			<li>Ordered list 5 (type "1", reversed)
+				<ol type="1" reversed>
+					<li value="5">Second ordered list </li>
+					<li>Second ordered list 1</li>
+					<li>Second ordered list 2</li>
+					<li>Second ordered list 3</li>
+				</ol>			
+			</li>
+		</ol>
+
+		<div class="bob"><img src="./assets/astra_bob.png" alt="Спанч Боб" height="400px" width="300" ></div>
+
+		<dl>
+			<dt>Первый термин</dt>
+				<dd>Описание первого термина</dd>
+			<dt>Второй термин</dt>
+				<dd>Описание второго термина</dd>
+		</dl>
+		<p><input type="button" value="Push me, baby!"></p>
+		
+		<p><a href="https://ru.wikihow.com/прорастить-семена-апельсина#step-id-27" target="_blank"> Якорь: 3-й Шаг проращивания семечки апельсина<br>(href="https://ru.wikihow.com/прорастить-семена-апельсина#step-id-27")</a></p>
+		
+		<div class="container">
+			<div class="incontainer">
+				<p>
+					Мы поместили текст в <code>&lt;div&gt;</code>,
+					а сам контейнер покрасили в оранжевый.
+				</p>
+			</div>
+		</div>
+		
+		<div><b>
+			<text class="one" title="каждый"> каждый </text>
+			<text class="two" title="охотник"> охотник </text>
+			<text class="three" title="желает"> желает </text>
+			<text class="four" title="знать"> знать </text>
+			<text class="five" title="где"> где </text>
+			<text class="six" title="сидит"> сидит </text>
+			<text class="seven" title="фазан"> фазан </text>
+		</b></div>
+		
+		<audio 
+			src="./assets/BMTH.mp3" 
+			alt="Music" 
+			controls 
+			loop 
+			autoplay 
+			title="Bring me to the horizon - Teardrops">
+		</audio>
+		
+		<p>Температура воды</p>
+		<meter value="0" max="100" low="10" high="60">Низкая</meter>
+		<meter value="30" max="100" low="10" high="60">Нормальная</meter>
+		<meter value="80" max="100" low="10" high="60">Горячая</meter>
+		<meter value="100" max="100">Кипяток</meter>
+		
+		<p>Укажите вашу температуру в градусах: 
+   <input type="number" min="35" max="41" value="36.6" step="0.1"></p>
+		
+		<h1> Заголовок 1 </h1>
+		<h2> Заголовок 2 </h2>
+		<h3> Заголовок 3 </h3>
+		<h4> Заголовок 4 </h4>
+		<h5> Заголовок 5 </h5>
+		<h6> Заголовок 6 </h6>
+		
+	<p>Между абзацами добавляется межстрочный интервал</p>
+	<p>Вот такой вот ^</p>
+	<p> А вот так выглядит перенос строки с помощью <b>&lt;br&gt;</b> </p>
+	<p>В одних садах цветёт миндаль, в других метёт метель.<br>
+		В одних краях ещё февраль, в других — уже апрель.<br>
+		Проходит время, вечный счёт: год за год, век за век...<br>
+		Во всём — его неспешный ход, его кромешный бег.<br>
+		В году на радость и печаль по двадцать пять недель.<br>
+		Мне двадцать пять недель февраль, и двадцать пять — апрель.<br>
+		По двадцать пять недель в туман уходит счёт векам.<br>
+		Летит мой звонкий балаган куда-то к облакам.</p>
+
+	<p>М. Щербаков</p>
+	
+	<p>Формула серной кислоты: H<sub>2</sub>SO<sub>4</sub></p>
+	<p>Какая-то формула: C<sub>0</sub> + C<sub>1</sub>X<sup>1</sup> + ... + C<sub>n</sub>X<sup>n</sup></p>
+	<p>Спецсимволы<br>
+	&lt; - меньше<br>
+	&gt; - больше<br>
+	&quot; - двойная кавычка<br>
+	&amp; - амперсанд<br>
+	&nbsp; - неразрывный пробел<br>
+	&shy; - мягкий перенос</p>
+	
+	<div class="contactInfo">
+		<img src="./assets/logo.svg" alt="Логотип круглый"/><br>
+		<a href="mailto:genriepatters@gmail.com">Написать автору на электронную почту (mailto:)</a><br>
+		<a href="callto:genrie_patters">Skype автора (callto:)</a><br>
+		<a href="tel:+79994317138">Позвонить автору (tel:)</a>
+	</div>
+	<p id="down"></p>
+	<p><div class="navigator"><a href="#up">Вверх страницы</a></div></p>
+	</body>
+</html>	
